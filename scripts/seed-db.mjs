@@ -171,10 +171,28 @@ async function seed() {
     host: process.env.DB_HOST || 'localhost',
     user: process.env.DB_USER || 'root',
     password: process.env.DB_PASSWORD || '',
-    database: process.env.DB_NAME || 'room_rent_db'
+    database: process.env.DB_NAME || 'room_rent_db',
+    port: process.env.DB_PORT || 3306,
+    ssl: process.env.DB_HOST?.includes('tidbcloud.com') ? {
+      minVersion: 'TLSv1.2',
+      rejectUnauthorized: true
+    } : undefined
   });
 
   try {
+    console.log('Ensuring rooms table exists...');
+    await connection.query(`
+      CREATE TABLE IF NOT EXISTS rooms (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        name VARCHAR(100) NOT NULL,
+        price INT NOT NULL,
+        location VARCHAR(255) NOT NULL,
+        image VARCHAR(255) NOT NULL,
+        description TEXT,
+        contact VARCHAR(100)
+      );
+    `);
+
     console.log('Clearing existing rooms...');
     await connection.query('TRUNCATE TABLE rooms');
 
