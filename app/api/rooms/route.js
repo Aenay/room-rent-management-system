@@ -7,16 +7,37 @@ export async function GET(request) {
     const search = searchParams.get("search") || "";
     const minPrice = searchParams.get("minPrice") || 0;
     const maxPrice = searchParams.get("maxPrice") || 999999999;
+    const page = parseInt(searchParams.get("page")) || 1;
+    const limit = parseInt(searchParams.get("limit")) || 6;
+    const offset = (page - 1) * limit;
+
+    const [countResult] = await pool.query(
+      `SELECT COUNT(*) as total FROM rooms
+       WHERE (name LIKE ? OR location LIKE ?)
+       AND price BETWEEN ? AND ?`,
+      [`%${search}%`, `%${search}%`, minPrice, maxPrice]
+    );
+    const total = countResult[0].total;
+    const totalPages = Math.ceil(total / limit);
 
     const [rows] = await pool.query(
       `SELECT * FROM rooms
        WHERE (name LIKE ? OR location LIKE ?)
        AND price BETWEEN ? AND ?
-       ORDER BY id DESC`,
-      [`%${search}%`, `%${search}%`, minPrice, maxPrice]
+       ORDER BY id DESC
+       LIMIT ? OFFSET ?`,
+      [`%${search}%`, `%${search}%`, minPrice, maxPrice, limit, offset]
     );
 
-    return Response.json(rows);
+    return Response.json({
+      data: rows,
+      meta: {
+        total,
+        page,
+        limit,
+        totalPages
+      }
+    });
   } catch (error) {
     console.error('Error fetching rooms:', error);
     return Response.json({ error: 'Failed to fetch rooms' }, { status: 500 });

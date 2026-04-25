@@ -163,6 +163,126 @@ const sampleRooms = [
     image: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800&q=80",
     description: "Experience traditional Thai living. A room in a beautifully preserved wooden house along the river. Very authentic and peaceful.",
     contact: "Email: classic@ayutthayahomes.com"
+  },
+  {
+    name: "Cozy Beachfront Villa",
+    price: 45000,
+    location: "Hua Hin",
+    image: "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800&q=80",
+    description: "Relaxing beachfront villa perfect for vacations. Includes private pool and direct beach access.",
+    contact: "Line: @huahinbeach"
+  },
+  {
+    name: "Urban Minimalist Studio",
+    price: 10500,
+    location: "Ratchada, Bangkok",
+    image: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=80",
+    description: "Sleek and modern studio near the MRT. Includes all essential amenities and high-speed Wi-Fi.",
+    contact: "Phone: 091-234-5678"
+  },
+  {
+    name: "Traditional Lanna Homestay",
+    price: 5500,
+    location: "Old City, Chiang Mai",
+    image: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800&q=80",
+    description: "Experience Northern Thai culture in this traditional wooden home inside the ancient city walls.",
+    contact: "Email: stay@lannahome.com"
+  },
+  {
+    name: "High-Tech Smart Condo",
+    price: 18000,
+    location: "Phaya Thai, Bangkok",
+    image: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&q=80",
+    description: "Fully automated condo near the Airport Rail Link. Keyless entry, voice-controlled lighting, and smart TV.",
+    contact: "Line: @smarthome_bkk"
+  },
+  {
+    name: "Spacious Family Villa",
+    price: 55000,
+    location: "Pattaya",
+    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80",
+    description: "A huge 4-bedroom villa with a large swimming pool and BBQ area. Great for large families or groups.",
+    contact: "Phone: 088-777-6655"
+  },
+  {
+    name: "Budget Backpacker Hostel Bed",
+    price: 1500,
+    location: "Khao San Road, Bangkok",
+    image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80",
+    description: "Single bed in a vibrant 4-bed dorm. Great place to meet travelers. Free breakfast included.",
+    contact: "Line: @khaosanbed"
+  },
+  {
+    name: "Luxury Skyline Penthouse",
+    price: 95000,
+    location: "Sukhumvit, Bangkok",
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+    description: "Live above the clouds! Premium 3-bedroom penthouse with private elevator and rooftop jacuzzi.",
+    contact: "Email: vip@skylinebkk.com"
+  },
+  {
+    name: "Quiet Mountain Retreat Room",
+    price: 6500,
+    location: "Khao Yai",
+    image: "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb65?w=800&q=80",
+    description: "Escape the city to this peaceful room surrounded by nature and mountains. Great air quality.",
+    contact: "Phone: 084-321-9876"
+  },
+  {
+    name: "Modern Expat Apartment",
+    price: 22000,
+    location: "Ekkamai, Bangkok",
+    image: "https://images.unsplash.com/photo-1502672260266-1c1e52516811?w=800&q=80",
+    description: "Fully furnished 2-bedroom apartment popular with expats. Close to international schools and malls.",
+    contact: "Line: @ekkamailiving"
+  },
+  {
+    name: "Student Dormitory Room",
+    price: 4000,
+    location: "Bang Khen, Bangkok",
+    image: "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=800&q=80",
+    description: "Simple, affordable room right next to the university. Includes AC, bed, desk, and wardrobe.",
+    contact: "Phone: 081-111-2222"
+  },
+  {
+    name: "Charming Boutique Room",
+    price: 13500,
+    location: "Nimman, Chiang Mai",
+    image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&q=80",
+    description: "Stylish room in the hip Nimman area. Walk to the best cafes and boutiques in town.",
+    contact: "Line: @boutiquenimman"
+  },
+  {
+    name: "Riverside Studio",
+    price: 16000,
+    location: "Charoen Krung, Bangkok",
+    image: "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=800&q=80",
+    description: "Cozy studio with direct river views. Near the ICONSIAM shopping mall and BTS.",
+    contact: "Email: river@charoenkrung.com"
+  },
+  {
+    name: "Eco-Friendly Bamboo Hut",
+    price: 3500,
+    location: "Pai, Mae Hong Son",
+    image: "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb65?w=800&q=80",
+    description: "Experience simple living in a bamboo hut. Solar-powered lights and an outdoor shower.",
+    contact: "Line: @paibamboo"
+  },
+  {
+    name: "Cozy Suburb Townhouse",
+    price: 15000,
+    location: "Nonthaburi",
+    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80",
+    description: "Quiet 2-story townhouse in a secure village. Perfect for those working remotely.",
+    contact: "Phone: 089-888-7777"
+  },
+  {
+    name: "Industrial Loft Space",
+    price: 28000,
+    location: "Silom, Bangkok",
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80",
+    description: "Massive open-plan loft in the business district. Great for creative professionals.",
+    contact: "Email: loft@silomspace.com"
   }
 ];
 
